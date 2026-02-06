@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Recruitment Solutions</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top bar -->
+  <header class="topbar">
+    <div class="brand">
+      <img src="logo.png" alt="Recruitment Solutions logo" class="logo">
+      <div>
+        <h1 class="site-title">Recruitment Solutions</h1>
+        <p class="site-subtitle">Search jobs and apply online</p>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <a href="#home">Home</a>
+      <a href="#jobs">Jobs</a>
+      <a href="#about">About Us</a>
+      <a href="#contact" class="nav-btn">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Banner -->
+  <section class="banner" id="home">
+    <img src="banner.png" alt="Website banner" class="banner-img">
+
+    <div class="banner-content">
+      <h2>Find your next job faster</h2>
+      <p>Use the search to find a role that matches your skills.</p>
+
+      <!-- Search box -->
+      <div class="search-box">
+        <input type="text" placeholder="Search job title or keyword">
+        <select>
+          <option value="">Location</option>
+          <option>London</option>
+          <option>Manchester</option>
+          <option>Birmingham</option>
+          <option>Remote</option>
+        </select>
+        <button type="button">Search</button>
+      </div>
+
+      <div class="banner-buttons">
+        <a class="btn primary" href="#jobs">View Jobs</a>
+        <a class="btn secondary" href="#contact">Apply Help</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Jobs -->
+  <main class="container" id="jobs">
+    <h3>Featured Jobs</h3>
+    <p class="small">Highlighted jobs are shown at the top to help users find roles quickly.</p>
+
+    <div class="job-grid">
+      <div class="job-card">
+        <h4>Junior Web Developer</h4>
+        <p class="meta">Location: London • Type: Full-time</p>
+        <p>Build and update website pages using HTML, CSS and basic JavaScript.</p>
+        <button class="apply-btn">Apply Now</button>
+      </div>
+
+      <div class="job-card">
+        <h4>IT Support Assistant</h4>
+        <p class="meta">Location: Manchester • Type: Part-time</p>
+        <p>Help users with login issues, basic troubleshooting, and simple support tasks.</p>
+        <button class="apply-btn">Apply Now</button>
+      </div>
+
+      <div class="job-card">
+        <h4>Digital Marketing Intern</h4>
+        <p class="meta">Location: Remote • Type: Internship</p>
+        <p>Support social media posts and help update website content and banners.</p>
+        <button class="apply-btn">Apply Now</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- About -->
+  <section class="container" id="about">
+    <h3>About Us</h3>
+    <p>
+      Recruitment Solutions helps job seekers find jobs and apply online.
+      Our goal is to make the application process simple and clear.
+    </p>
+  </section>
+
+  <!-- Contact -->
+  <section class="container" id="contact">
+    <h3>Contact</h3>
+    <p class="small">If you need help applying, send us a message.</p>
+
+    <form class="contact-form">
+      <label>Full Name</label>
+      <input type="text" placeholder="Your name" required>
+
+      <label>Email</label>
+      <input type="email" placeholder="Your email" required>
+
+      <label>Message</label>
+      <textarea rows="5" placeholder="Type your message..." required></textarea>
+
+      <button type="submit">Send Message</button>
+      <p class="small note">After submitting, you should show a simple confirmation message.</p>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <p>© Recruitment Solutions</p>
+  </footer>
+
+</body>
+</html>
