@@ -452,3 +452,119 @@ footer {
     </div>
   </div>
 </section>
+/* ===== One-page layout tweaks (paste at very bottom) ===== */
+:root{
+  --maxw: 1100px;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+/* Top bar smaller */
+.topbar{
+  padding: 8px 14px;
+}
+
+/* HERO: shorter */
+.hero{
+  min-height: 60vh;          /* was too tall */
+  padding: 28px 16px;
+}
+
+.hero-content{
+  max-width: var(--maxw);
+  margin: 0 auto;
+}
+
+.hero h2{
+  font-size: 34px;
+  margin: 0 0 10px;
+}
+
+.hero p{
+  margin: 0 0 14px;
+  opacity: .9;
+}
+
+/* Search smaller + tighter */
+.search-box{
+  max-width: 820px;
+  margin: 14px 0 14px;
+  gap: 8px;
+}
+
+.search-box input,
+.search-box select{
+  padding: 10px 12px;
+  font-size: 14px;
+}
+
+.search-box button{
+  padding: 10px 14px;
+  font-size: 14px;
+}
+
+/* Buttons smaller */
+.hero-buttons{
+  margin-top: 10px;
+  gap: 10px;
+}
+
+.btn{
+  padding: 10px 14px;
+  font-size: 14px;
+}
+
+/* Sections tighter */
+.section{
+  padding: 28px 16px;   /* reduce scrolling */
+}
+
+.section h2{
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Cards tighter */
+.jobs-grid{
+  gap: 14px;
+}
+
+.job-card{
+  padding: 14px;
+}
+
+.job-card h3{
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+/* Make banner image not take over */
+.hero-banner img,
+.banner img{
+  max-height: 220px;      /* keeps it from filling the screen */
+  width: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+/* Contact form tighter */
+.contact-form{
+  max-width: 820px;
+}
+
+.contact-form input,
+.contact-form textarea{
+  padding: 10px 12px;
+  font-size: 14px;
+}
+
+.contact-form textarea{
+  min-height: 110px;
+}
+
+/* Optional: hide footer spacing if it’s big */
+footer{
+  padding: 16px;
+}
